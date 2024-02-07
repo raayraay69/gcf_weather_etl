@@ -17,7 +17,7 @@ gcloud functions deploy weather_etl \
 --runtime nodejs18 \
 --trigger-event google.storage.object.finalize \
 --entry-point readObservation \
---trigger-resource sp24_elliott_41200_weather_dev
+--trigger-resource sp24_eraymond_41200_weather_dev
 ```
 
 ### Copying a File to the Cloud Storage Bucket
@@ -46,3 +46,5 @@ gsutil cp 724380-93819_sample.csv gs://sp24_elliott_41200_weather_dev
 
 1. Write an insert query to load the transformed data into a table
 2. Use the file name to identify the weather station providing the data
+
+
